@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    TODO:
+    - #create sequence of images for hanging the man
+    - #update image on incorrect guess
+    - #detect game over when man is hanged
+    - #detect game win when all letters are filled in
+    - #disable button after guessed (maybe), or list guesses
+    - #Start/Restart (with confirmation prompt)
+    - #pick random word
+    - #styling
+-->
+<html>
+    <head>
+        <title>Hangman</title>
+        <link rel="stylesheet" href="./stylesheet.css">
+		<script src="jsfunctions.js"></script>
+        
+    </head>
+    <body onload="onLoad()">
+        <h1 class=hangman>Hangman</h1>
+		
+		
+		<div class="text_center">
+			<label id="secret_word_input_label" for="secret_word">Enter word: </label>
+			<input type="password" id="secret_word" name="secret_word"><br><br>
+			<div class="game_state" id="game_state"></div>
+		</div>
+		
+		<br>
+		
+		
+
+        <div class="text_center"><button id="start_button" onclick="startGame()">Start</button></div>
+
+        <div class="image"><img id=gallows src="./images/0.png"/></div>
+        <div id="blanks" class="hangman"></div> <!-- this used to have the class as "hangman italic". I'm not sure why. -->
+		<br>
+        <div class="text_center" id="letters"></div>
+        <div class="template">
+            <span id="blankTemplate" class="template">_</span>
+			<br>
+            <button id="letterTemplate" class="hangman" class="template" onclick="placeLetter(this.innerText)">A</button>
+        </div>
+    </body>
+</html>

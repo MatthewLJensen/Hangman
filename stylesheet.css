@@ -1,0 +1,47 @@
+h1
+{
+	text-align:center;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:48pt;
+}
+
+button,#blanks
+{
+	font-size:48pt;
+	font-weight:bold;
+	font-family:'CourierNew',Courier,monospace;
+}
+
+.text_center{
+	text-align:center;
+}
+
+.game_state{
+	text-align:center;
+	font-size:50pt;
+	font-family:'CourierNew',Courier,monospace;
+}
+
+.image{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:22%;
+}
+
+.hangman
+{
+	color:blue;
+	text-align:center;
+}
+
+#gallows
+{
+	visibility:visible;
+	height:500px;
+}
+
+.template
+{
+	display:none;
+}
